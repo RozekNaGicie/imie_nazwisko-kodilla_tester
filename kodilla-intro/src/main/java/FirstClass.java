@@ -15,5 +15,11 @@ public class FirstClass {
         newNoteXX.checkPrice();
         newNoteXX.checkWeight();
         newNoteXX.comparePriceAndYear();
+
+        //        zadanie rok przestepny
+
+        LeapYear newYear = new LeapYear(1900);
+        boolean year = newYear.isYear();
+        System.out.println(year);
     }
 }
