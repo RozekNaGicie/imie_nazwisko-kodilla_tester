@@ -30,6 +30,8 @@ public class SimpleArray {
 
         System.out.println(sum);
 
+
+
     }
 
 }
