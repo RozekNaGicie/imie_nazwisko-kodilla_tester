@@ -6,7 +6,7 @@ public class Person {
     int age = 24;
     ProgramistaJavaScript job = new ProgramistaJavaScript();
 
-    public void respons(){
+    public void respons() {
         System.out.println("Obowiazki w pracy: " + job.respons);
     }
 
