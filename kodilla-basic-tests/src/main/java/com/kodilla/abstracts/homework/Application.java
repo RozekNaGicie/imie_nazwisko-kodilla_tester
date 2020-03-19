@@ -16,5 +16,10 @@ public class Application {
         rectangle.circuit();
         rectangle.surfaceArea();
 
+        // zadanie 2  - job i respons;
+
+        Person mateusz = new Person();
+        mateusz.respons();
+
     }
 }
