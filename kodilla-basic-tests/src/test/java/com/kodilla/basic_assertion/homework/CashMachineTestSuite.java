@@ -1,4 +1,4 @@
-package com.kodilla.basic_assertion;
+package com.kodilla.basic_assertion.homework;
 
 import com.kodilla.bank.homework.CashMachine;
 import org.junit.jupiter.api.Test;
@@ -79,6 +79,7 @@ public class CashMachineTestSuite {
         cashMachineInstance.putMoney(50);
         assertEquals(50, cashMachineInstance.cashMachineSaldo());
     }
+
     @Test
     public void shouldReturnZeroIfWrongMethodValue() {
         cashMachineInstance.getMoney(-120);
@@ -104,6 +105,7 @@ public class CashMachineTestSuite {
         cashMachineInstance.putMoney(120);
         assertEquals(-80, cashMachineInstance.cashMachineSaldo());
     }
+
     @Test
     public void shouldReturnZeroValueOfFewOperationIfGetAndPutMethodIsSame() {
         cashMachineInstance.getMoney(120);
@@ -116,6 +118,7 @@ public class CashMachineTestSuite {
     public void shouldReturnZeroofNumberOperationsIfNoOperations() {
         assertEquals(0, cashMachineInstance.cashMachineHistory());
     }
+
     @Test
     public void shouldReturnOneIfItWasOneOperation() {
         cashMachineInstance.getMoney(120);
@@ -129,11 +132,13 @@ public class CashMachineTestSuite {
         cashMachineInstance.putMoney(120);
         assertEquals(3, cashMachineInstance.cashMachineHistory());
     }
+
     @Test
     public void shouldReturnZeroIfWrongValue() {
         cashMachineInstance.getMoney(-120);
         assertEquals(0, cashMachineInstance.cashMachineHistory());
     }
+
     @Test
     public void shouldReturnZeroIfValueZero() {
         cashMachineInstance.getMoney(0);
