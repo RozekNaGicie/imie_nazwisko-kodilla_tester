@@ -48,7 +48,7 @@ public class CashMachine {
         }
     }
 
-    public void putMoney(int value){
+    public void putMoney(int value) {
 
         if (isValueCorrect(value)) {
             addToArray(value);
@@ -61,19 +61,19 @@ public class CashMachine {
         }
     }
 
-    public int cashMachineSaldo(){
-        int sum =0;
-        for(int i =0; i <this.transactionArray.length; i++ ){
+    public int cashMachineSaldo() {
+        int sum = 0;
+        for (int i = 0; i < this.transactionArray.length; i++) {
             sum = sum + this.transactionArray[i];
         }
         return sum;
     }
 
-    public int cashMachineHistory(){
+    public int cashMachineHistory() {
         return this.transactionArray.length;
     }
 
-    public int[] transGetter(){
+    public int[] transGetter() {
         return this.transactionArray;
     }
 

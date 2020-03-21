@@ -7,64 +7,63 @@ public class Bank {
     CashMachine cm2;
     CashMachine cm3;
 
-    public Bank(){
-        this.arrayOfCM = new CashMachine[]{cm1 = new CashMachine(),cm2 = new CashMachine(),cm3 = new CashMachine()};
+    public Bank() {
+        this.arrayOfCM = new CashMachine[]{cm1 = new CashMachine(), cm2 = new CashMachine(), cm3 = new CashMachine()};
     }
 
-    public int GetSumFromAllMachines(){
+    public int GetSumFromAllMachines() {
         int sum = 0;
-        for(int i = 0; i < this.arrayOfCM.length; i++){
+        for (int i = 0; i < this.arrayOfCM.length; i++) {
             sum = sum + this.arrayOfCM[i].cashMachineSaldo();
         }
         return sum;
     }
 
-    public int AllGetMoneyTrans(){
+    public int AllGetMoneyTrans() {
         int sum = 0;
-        for(int i = 0; i < this.arrayOfCM.length; i++){
+        for (int i = 0; i < this.arrayOfCM.length; i++) {
             sum = sum + this.arrayOfCM[i].countOfGetMoney;
         }
         return sum;
     }
 
-    public int AllPutMoneyTrans(){
+    public int AllPutMoneyTrans() {
         int sum = 0;
-        for(int i = 0; i < this.arrayOfCM.length; i++){
+        for (int i = 0; i < this.arrayOfCM.length; i++) {
             sum = sum + this.arrayOfCM[i].countOfPutMoney;
         }
         return sum;
     }
 
-    public int averageGetMoney(){
+    public int averageGetMoney() {
         int sum = 0;
         int count = 0;
-        for(int i = 0; i < this.arrayOfCM.length; i++){
+        for (int i = 0; i < this.arrayOfCM.length; i++) {
             int[] transArray = this.arrayOfCM[i].transGetter();
-            for(int j = 0; j < transArray.length; j++){
-                if(transArray[j] < 0){
+            for (int j = 0; j < transArray.length; j++) {
+                if (transArray[j] < 0) {
                     sum = sum + transArray[j];
-                    count ++;
+                    count++;
                 }
             }
         }
-        return -(sum/count);
+        return -(sum / count);
     }
 
-    public int averagePutMoney(){
+    public int averagePutMoney() {
         int sum = 0;
         int count = 0;
-        for(int i = 0; i < this.arrayOfCM.length; i++){
+        for (int i = 0; i < this.arrayOfCM.length; i++) {
             int[] transArray = this.arrayOfCM[i].transGetter();
-            for(int j = 0; j < transArray.length; j++){
-                if(transArray[j] > 0){
+            for (int j = 0; j < transArray.length; j++) {
+                if (transArray[j] > 0) {
                     sum = sum + transArray[j];
-                    count ++;
+                    count++;
                 }
             }
         }
-        return sum/count;
+        return sum / count;
     }
-
 
 
 }
