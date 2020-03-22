@@ -15,5 +15,4 @@ public class Microsoft extends OperatingSystem {
     public void turnOff() {
         System.out.println("Turn off Nadpisane przez Microsoft");
     }
-
 }

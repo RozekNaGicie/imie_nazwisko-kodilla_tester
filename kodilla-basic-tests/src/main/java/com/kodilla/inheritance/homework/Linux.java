@@ -15,5 +15,4 @@ public class Linux extends OperatingSystem {
     public void turnOff() {
         System.out.println("Turn off Nadpisane przez Linux");
     }
-
 }

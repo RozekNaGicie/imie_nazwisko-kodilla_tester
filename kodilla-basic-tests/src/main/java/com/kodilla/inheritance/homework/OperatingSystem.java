@@ -15,5 +15,4 @@ public class OperatingSystem {
     public void turnOff() {
         System.out.println("Turning off");
     }
-
 }
