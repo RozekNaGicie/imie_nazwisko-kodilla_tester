@@ -40,11 +40,8 @@ public class CashMachine {
             addToArray(temp1);
             this.countOfGetMoney++;
             System.out.println("Wyplacono " + value + "zł");
-
         } else {
-
             System.out.println("Cos poszlo nie tak");
-
         }
     }
 
@@ -53,10 +50,8 @@ public class CashMachine {
             addToArray(value);
             this.countOfPutMoney++;
             System.out.println("Wplacono " + value + "zł");
-
         } else {
             System.out.println("Cos poszlo nie tak");
-
         }
     }
 
