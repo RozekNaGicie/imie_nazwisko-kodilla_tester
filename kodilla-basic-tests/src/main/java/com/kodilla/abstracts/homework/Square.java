@@ -8,16 +8,13 @@ public class Square extends Shape {
 
     @Override
     public void surfaceArea() {
-
         int surface = side * side;
         System.out.println("Pole powierzchni kwadratu " + surface);
-
     }
 
     @Override
-    public void circuit() {
+    public void circumference() {
         int circ = 4 * side;
         System.out.println("obw kwadratu " + circ);
-
     }
 }

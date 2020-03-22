@@ -11,17 +11,13 @@ public class Rectangle extends Shape {
 
     @Override
     public void surfaceArea() {
-
         int surf = side * side2;
         System.out.println("Pole powierzchni prostokatu " + surf);
-
     }
 
     @Override
-    public void circuit() {
-
+    public void circumference() {
         int circ = 2 * side + 2 * side2;
         System.out.println("obw prostokatu " + circ);
-
     }
 }

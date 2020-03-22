@@ -13,5 +13,5 @@ public abstract class Shape {
 
     public abstract void surfaceArea();
 
-    public abstract void circuit();
+    public abstract void circumference();
 }
