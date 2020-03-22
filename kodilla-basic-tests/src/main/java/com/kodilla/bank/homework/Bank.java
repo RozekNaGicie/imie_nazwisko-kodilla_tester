@@ -2,10 +2,10 @@ package com.kodilla.bank.homework;
 
 public class Bank {
 
-    CashMachine[] arrayOfCM;
-    CashMachine cm1;
-    CashMachine cm2;
-    CashMachine cm3;
+    public CashMachine[] arrayOfCM;
+    public CashMachine cm1;
+    public CashMachine cm2;
+    public CashMachine cm3;
 
     public Bank() {
         this.arrayOfCM = new CashMachine[]{cm1 = new CashMachine(), cm2 = new CashMachine(), cm3 = new CashMachine()};
@@ -47,6 +47,8 @@ public class Bank {
                 }
             }
         }
+        if (count == 0) return 0;
+
         return -(sum / count);
     }
 
@@ -62,6 +64,8 @@ public class Bank {
                 }
             }
         }
+        if (count == 0) return 0;
+
         return sum / count;
     }
 

@@ -49,7 +49,6 @@ public class CashMachine {
     }
 
     public void putMoney(int value) {
-
         if (isValueCorrect(value)) {
             addToArray(value);
             this.countOfPutMoney++;
