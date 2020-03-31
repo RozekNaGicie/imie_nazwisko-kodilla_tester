@@ -26,4 +26,10 @@ public class Square implements Shape {
         return circumference();
     }
 
+    @Override
+    public String toString() {
+        return "Square{" +
+                "width=" + width +
+                '}';
+    }
 }
