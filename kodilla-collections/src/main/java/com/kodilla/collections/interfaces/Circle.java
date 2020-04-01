@@ -4,22 +4,34 @@ public class Circle implements Shape {
 
     double radius;
     final double pi = Math.PI;
-    public Circle(double radius){
+
+    public Circle(double radius) {
         this.radius = radius;
     }
-    private double surfaceArea(){
-        double surfaceArea = pi * Math.pow(radius,2);
+
+    private double surfaceArea() {
+        double surfaceArea = pi * Math.pow(radius, 2);
         return surfaceArea;
     }
-    public double getSurfaceArea(){
+
+    public double getSurfaceArea() {
         return surfaceArea();
     }
-    private double circumference(){
+
+    private double circumference() {
         double circumference = 2 * pi * radius;
         return circumference;
     }
-    public double getCircumference(){
+
+    public double getCircumference() {
         return circumference();
     }
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi=" + pi +
+                '}';
+    }
 }

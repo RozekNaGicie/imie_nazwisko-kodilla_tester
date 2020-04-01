@@ -31,4 +31,15 @@ public class Triangle implements Shape {
     public double getCircumference() {
         return circumference();
     }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "width=" + width +
+                ", height=" + height +
+                ", hypotenuse=" + hypotenuse +
+                '}';
+    }
 }
+
+

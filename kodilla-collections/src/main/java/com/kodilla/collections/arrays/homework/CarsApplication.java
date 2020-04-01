@@ -5,10 +5,9 @@ import com.kodilla.collections.interfaces.homework.*;
 
 public class CarsApplication {
 
-    private static Randomizer rand = new Randomizer();
 
     public static Car drawCar() {
-        Car car = new CarsInheritance(rand.getRandom(), rand.getRandom(), rand.getRandom());
+        Car car = new CarsInheritance(Randomizer.getRandom(), Randomizer.getRandom(), Randomizer.getRandom());
         return car;
     }
 

@@ -13,10 +13,11 @@ public class ShapeListApplication {
 
         squares.add(new Square(2));
         squares.add(new Square(5));
-        squares.add(new Square(3));
+        squares.add(new Square(15));
 
         for (Square square: squares) {
-            System.out.println(square.toString());
+            if(square.getSurfaceArea() > 20)
+                System.out.println(square.toString());
         }
 
     }
