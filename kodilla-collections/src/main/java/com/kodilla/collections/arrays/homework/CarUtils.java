@@ -6,7 +6,7 @@ public class CarUtils {
 
     public static void describeCar(Car car) {
         System.out.println("Car: " + getCarName(car));
-        System.out.println("Current speed is: " );
+        System.out.println("Current speed is: " + car.getSpeed());
         car.increaseSpeed();
         car.decreaseSpeed();
     }
