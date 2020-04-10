@@ -9,6 +9,7 @@ public class Principal {
         this.directorSurname = directorSurname;
     }
 
+    //gettery
     public String getDirectorName() {
         return directorName;
     }
