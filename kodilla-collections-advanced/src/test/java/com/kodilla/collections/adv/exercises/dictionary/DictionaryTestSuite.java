@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DictionaryTestSuite {
 
     @Test
-    public void testAddWord(){
+    public void testAddWord() {
         Dictionary dict = new Dictionary();
         String polishWord = "stos";
         EnglishWord englishWord = new EnglishWord(PartOfSpeech.NOUN, "stack");
@@ -18,8 +18,9 @@ class DictionaryTestSuite {
         dict.addWord(polishWord, englishWord);
         assertEquals(1, dict.size());
     }
+
     @Test
-    public void testFindEnglishWord(){
+    public void testFindEnglishWord() {
         // given
         Dictionary dict = new Dictionary();
         dict.addWord("stos", new EnglishWord(PartOfSpeech.NOUN, "stack"));
@@ -32,10 +33,11 @@ class DictionaryTestSuite {
         List<EnglishWord> expectedList = new ArrayList<>();
         expectedList.add(new EnglishWord(PartOfSpeech.NOUN, "game"));
         expectedList.add(new EnglishWord(PartOfSpeech.NOUN, "play"));
-        assertEquals(expectedList,result);
+        assertEquals(expectedList, result);
     }
+
     @Test
-    public void testFindEnglishWords_withPartOfSpeech(){
+    public void testFindEnglishWords_withPartOfSpeech() {
         // given
         Dictionary dict = new Dictionary();
         dict.addWord("stos", new EnglishWord(PartOfSpeech.NOUN, "stack"));
@@ -48,7 +50,5 @@ class DictionaryTestSuite {
         List<EnglishWord> exampleList = new ArrayList<>();
         exampleList.add(new EnglishWord(PartOfSpeech.NOUN, "brotherhood"));
         assertEquals(exampleList, result);
-
-
     }
 }
