@@ -23,13 +23,10 @@ public class Warehouse {
     }
 
     public Order getOrder(String number) throws OrderDoesntExistException {
-        List<Order> result = getWarehouses()
+        return  getWarehouses()
                 .stream()
-                .filter(n -> n.getNumber().equals(number))
-                .collect(Collectors.toList());
-        if (result.isEmpty())
-            throw new OrderDoesntExistException();
-        return result.get(0);
+//                .filter(n -> n.getNumber().equals(number)).findFirst().orElseThrow(OrderDoesntExistException::new);
+                .filter(n -> n.getNumber().equals(number)).findFirst().orElseThrow(() -> new OrderDoesntExistException("asdsa"));
     }
 
     public List<Order> getWarehouses() {
