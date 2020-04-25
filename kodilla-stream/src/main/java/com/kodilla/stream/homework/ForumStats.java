@@ -3,8 +3,6 @@ package com.kodilla.stream.homework;
 import com.kodilla.stream.User;
 import com.kodilla.stream.UserRepository;
 
-import java.sql.SQLOutput;
-
 public class ForumStats {
 
     public static void main(String[] args) {

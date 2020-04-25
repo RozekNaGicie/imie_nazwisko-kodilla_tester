@@ -26,11 +26,10 @@ public class Warehouse {
         return  getWarehouses()
                 .stream()
 //                .filter(n -> n.getNumber().equals(number)).findFirst().orElseThrow(OrderDoesntExistException::new);
-                .filter(n -> n.getNumber().equals(number)).findFirst().orElseThrow(() -> new OrderDoesntExistException("asdsa"));
+                .filter(n -> n.getNumber().equals(number)).findFirst().orElseThrow(() -> new OrderDoesntExistException("There is no order like this in database"));
     }
 
     public List<Order> getWarehouses() {
         return warehouses;
     }
-
 }
