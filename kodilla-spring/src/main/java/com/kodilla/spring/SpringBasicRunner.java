@@ -10,8 +10,8 @@ import sun.java2d.pipe.SpanShapeRenderer;
 @SpringBootApplication
 public class SpringBasicRunner {
 
-    public static void main(String[] args) {
-        Calculator calculator = new Calculator(new Display());
-        calculator.add(4,5);
-    }
+//    public static void main(String[] args) {
+//        Calculator calculator = new Calculator(new Display());
+//        calculator.add(4,5);
+//    }
 }
