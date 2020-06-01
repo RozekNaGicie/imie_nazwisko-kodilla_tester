@@ -9,6 +9,10 @@ public class Application {
 ////        System.out.println("Wartosci zero pojawily sie: " + tabs2[0] + " Wartosci jeden pojawily sie " + tabs2[1]);
 //        String msg = 5 > 10 ? "Number is greater than 10" : "Number is less than or equal to 10";
 
-        tablice.zadanie4();
+//        tablice.zadanie4();
+
+        CwiczeniaXIV cw = new CwiczeniaXIV();
+        cw.square(4,'o');
     }
+
 }

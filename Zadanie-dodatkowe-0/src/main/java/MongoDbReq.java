@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 
-
 public class MongoDbReq {
 
     String dataBaseName, collectionName;
