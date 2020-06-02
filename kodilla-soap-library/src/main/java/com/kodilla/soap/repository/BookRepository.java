@@ -25,22 +25,22 @@ public class BookRepository {
         library.put(potter.getSignature(), potter);
 
         Book randomBook = new Book();
-        potter.setSignature("A113");
-        potter.setTitle("Random title");
-        potter.setAuthor("Random Author 1");
-        potter.setYearOfProduce(2012);
-        potter.setGenre(Genre.SCI_FI);
+        randomBook.setSignature("A113");
+        randomBook.setTitle("Random title");
+        randomBook.setAuthor("Random Author 1");
+        randomBook.setYearOfProduce(2012);
+        randomBook.setGenre(Genre.SCI_FI);
 
-        library.put(randomBook.getSignature(), potter);
+        library.put(randomBook.getSignature(), randomBook);
 
         Book anotherRandomBook = new Book();
-        potter.setSignature("A114");
-        potter.setTitle("Random title 2");
-        potter.setAuthor("Random Author 3");
-        potter.setYearOfProduce(2000);
-        potter.setGenre(Genre.CRIME);
+        anotherRandomBook.setSignature("A114");
+        anotherRandomBook.setTitle("Random title 2");
+        anotherRandomBook.setAuthor("Random Author 3");
+        anotherRandomBook.setYearOfProduce(2000);
+        anotherRandomBook.setGenre(Genre.CRIME);
 
-        library.put(anotherRandomBook.getSignature(), potter);
+        library.put(anotherRandomBook.getSignature(), anotherRandomBook);
     }
 
     public Book findBook(String signature) {

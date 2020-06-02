@@ -13,18 +13,18 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 public class LibraryEndpoint {
     private static final String NAMESPACE_URI = "http://kodilla.com/library/soap";
 
-    private BookRepository BookRepository;
+    private BookRepository bookRepository;
 
     @Autowired
     public LibraryEndpoint(BookRepository bookRepository) {
-        this.BookRepository = bookRepository;
+        this.bookRepository = bookRepository;
     }
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getBookRequest")
     @ResponsePayload
     public GetBookResponse getBook(@RequestPayload GetBookRequest request) {
         GetBookResponse response = new GetBookResponse();
-        response.setBook(BookRepository.findBook(request.getName()));
+        response.setBook(bookRepository.findBook(request.getName()));
 
         return response;
     }
