@@ -16,9 +16,9 @@ public class WarehouseApp {
 //        Order order = null;
 //        try {
 //            order = warehouse.getOrder("64676");
-//            System.out.println(order.toString() + "Wyswietone zamowienie");
+//            System.out.println(order.toString() + "Your Order");
 //        } catch (OrderDoesntExistException e) {
-//            System.out.println("Zamowienie nie istnieje");
+//            System.out.println("Order not exist in database");
 //        }
         Order order = warehouse.getOrder("64676");
         System.out.println(order);

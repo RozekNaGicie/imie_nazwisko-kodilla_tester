@@ -1,3 +1,4 @@
+
 package com.kodilla.stream.optional.homework;
 
 import java.util.Optional;
