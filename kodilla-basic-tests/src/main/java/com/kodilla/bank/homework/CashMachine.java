@@ -25,7 +25,6 @@ public class CashMachine {
         int[] newTab = new int[this.size];
         System.arraycopy(this.transactionArray, 0, newTab, 0, this.transactionArray.length);
         newTab[this.size - 1] = value;
-//        System.out.println(newTab[1]);
         this.transactionArray = newTab;
         return this.transactionArray;
     }
